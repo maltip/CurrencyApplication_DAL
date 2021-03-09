@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Currency Application</string>
+    <string name="main_enter_Currency">Enter a currency Base (ex: USD) </string>
+    <string name="btn_search"> Search</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblEnterCurrency"
+        android:labelFor="@+id/etEnterCurrency"
+        android:layout_marginTop="30sp"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="@string/main_enter_Currency"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10sp"/>
+
+    <EditText
+        android:id="@+id/etEnterCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:layout_below="@+id/lblEnterCurrency"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEnterCurrency"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_search"/>
+
+    <ListView
+        android:id="@+id/lvCurrencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginStart="2sp"
+        android:layout_marginEnd="2sp"
+        android:divider="@null"
+        android:dividerHeight="0dp">
+    </ListView>
+
+</RelativeLayout>
